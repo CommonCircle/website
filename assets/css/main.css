@@ -320,11 +320,13 @@ input, select, textarea {
 	}
 
 	a {
-		color: #5F44CD;
+		color: #DBCCFA;
+		font-weight: 900;
+		text-decoration: none;
 	}
 
 		a:hover {
-			color: #DBCCFA;
+			color: #5F44CD;
 		}
 
 	strong, b {
