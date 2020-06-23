@@ -2087,6 +2087,23 @@ input, select, textarea {
 		border-color: rgba(0, 0, 0, 0.2);
 	}
 
+/* Arrow */
+	.arrow {
+	  box-sizing: border-box;
+	  height: 5vw;
+	  width: 5vw;
+	  border-style: solid;
+	  border-color: #1B1159;
+	  border-width: 0px 1px 1px 0px;
+	  transform: rotate(45deg);
+	  transition: border-width 150ms ease-in-out;
+	}
+
+	.arrow:hover {
+	  border-bottom-width: 4px;
+	  border-right-width: 4px;
+	}
+
 /* Button */
 
 	input[type="submit"],
