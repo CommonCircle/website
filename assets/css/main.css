@@ -191,6 +191,10 @@ input, select, textarea {
 			font-size: 1.25rem;
 		}
 
+		p.caption {
+			font-size: 0.80rem;
+		}
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
@@ -320,13 +324,12 @@ input, select, textarea {
 	}
 
 	a {
-		color: #DBCCFA;
-		font-weight: 900;
-		text-decoration: none;
+		color: #1B1159;
+		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #5F44CD;
+			color: #DDD8FA;
 		}
 
 	strong, b {
@@ -2088,6 +2091,23 @@ input, select, textarea {
 		border-color: rgba(0, 0, 0, 0.2);
 	}
 
+/* Arrow */
+	.arrow {
+	  box-sizing: border-box;
+	  height: 3vw;
+	  width: 3vw;
+	  border-style: solid;
+	  border-color: #1B1159;
+	  border-width: 0px 1px 1px 0px;
+	  transform: rotate(45deg);
+	  transition: border-width 150ms ease-in-out;
+	}
+
+	.arrow:hover {
+	  border-bottom-width: 4px;
+	  border-right-width: 4px;
+	}
+
 /* Button */
 
 	input[type="submit"],
@@ -2198,8 +2218,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			box-shadow: inset 0 0 0 1px #DDD8FA;
+			color: #DDD8FA !important;
 		}
 
 		input[type="submit"]:active,
@@ -2207,9 +2227,9 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(71, 211, 229, 0.2);
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			background-color: #DDD8FA;
+			box-shadow: inset 0 0 0 1px #4B2E83;
+			color: #4B2E83 !important;
 		}
 
 		input[type="submit"].primary,
@@ -2696,12 +2716,12 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
-		padding-left: 1rem;
+		margin: -2rem 0 2rem 0;
+		padding-left: 1.25rem;
 	}
 
 		ul li {
-			padding-left: 0.5rem;
+			padding-left: 0.25rem;
 		}
 
 		ul.alt {
@@ -8271,7 +8291,7 @@ input, select, textarea {
 			}
 
 				#wrapper > .invert a:hover {
-					color: #47D3E5;
+					color: #DDD8FA;
 				}
 
 			#wrapper > .invert strong, #wrapper > .invert b {
