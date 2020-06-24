@@ -2090,8 +2090,8 @@ input, select, textarea {
 /* Arrow */
 	.arrow {
 	  box-sizing: border-box;
-	  height: 5vw;
-	  width: 5vw;
+	  height: 3vw;
+	  width: 3vw;
 	  border-style: solid;
 	  border-color: #1B1159;
 	  border-width: 0px 1px 1px 0px;
