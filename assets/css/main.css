@@ -2091,6 +2091,65 @@ input, select, textarea {
 		border-color: rgba(0, 0, 0, 0.2);
 	}
 
+/* Menu */
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		width: 50%;
+		right: 10px;
+  		top: 10px;
+  		background: #1B1159;
+  		border-radius: 3.325em;  
+  		z-index: 10;		
+	}
+
+		.menu a{
+			border: 1px solid #DDD8FA;
+			font-size: 0.6rem;
+			height: 3.325em;
+			line-height: 3.325em;
+			border-radius: 3.325em;
+			padding: 0 2em;
+			margin: 0.5em;
+			background: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 0.125em;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			border-color: none !important;
+			box-shadow: none !important;
+			width: 10em;
+			
+		}
+
+		.menu a:hover{
+			background-color: #1B1159;
+		}
+
+	@media screen and (max-width: 1150px) {
+		.menu { 
+			width: 100%;
+			right: 0px;
+			top: 0px;
+			border-radius: 0em;  		
+
+		}
+
+		.menu a {
+			padding: 0em;
+			margin: 0.25em 0em !important;
+
+			border-radius: 0em !important;
+			padding: 0 0.5em !important;
+		}
+	}
+
 /* Arrow */
 	.arrow {
 	  box-sizing: border-box;
@@ -2168,6 +2227,34 @@ input, select, textarea {
 			line-height: 3.325em;
 			border-radius: 3.325em;
 			padding: 0 2em;
+		}
+
+		input[type="submit"].current,
+		input[type="reset"].current,
+		input[type="button"].current,
+		button.current,
+		.button.current {
+			background-color: #DDD8FA;
+			color: #4B2E83 !important;
+			pointer-events: none;
+		}
+
+		input[type="submit"].current:hover,
+		input[type="reset"].current:hover,
+		input[type="button"].current:hover,
+		button.current:hover,
+		.button.current:hover {
+			color: #000000 !important;
+		}
+
+		input[type="submit"].current:active,
+		input[type="reset"].current:active,
+		input[type="button"].current:active,
+		button.current:active,
+		.button.current:active {
+			color: #000000 !important;
+			background: #ffffff !important;
+
 		}
 
 		input[type="submit"].large,
