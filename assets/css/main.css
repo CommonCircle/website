@@ -169,10 +169,12 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
 		text-decoration: underline;
+		
 	}
 
 		a:hover {
 			text-decoration: none;
+			
 		}
 
 	strong, b {
@@ -330,6 +332,14 @@ input, select, textarea {
 
 		a:hover {
 			color: #DDD8FA;
+		}
+
+	.green a {
+		color: #00964B;
+	}
+
+		.green a:hover {
+			color: #A4D0BA;
 		}
 
 	strong, b {
@@ -2134,14 +2144,17 @@ input, select, textarea {
 
 	.menu.green {
 		background: #00964B !important;
+		color: #00964B !important;
 	}
 
 		.menu.green a {
 			border: 1px solid #00964B !important;
+			color: #00964B !important;
 		}
 
 		.menu.green a:hover {
 			background-color: #A4D0BA !important;
+			color: #00964B !important;
 		}
 
 	@media screen and (max-width: 1150px) {
@@ -2248,6 +2261,12 @@ input, select, textarea {
 		.button.current {
 			background-color: #DDD8FA;
 			color: #4B2E83 !important;
+			pointer-events: none;
+		}
+
+		.button.current.green {
+			background-color: #A4D0BA;
+			color: #00964B !important;
 			pointer-events: none;
 		}
 
