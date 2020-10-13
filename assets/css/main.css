@@ -2264,11 +2264,7 @@ input, select, textarea {
 			pointer-events: none;
 		}
 
-		.button.current.green {
-			background-color: #A4D0BA;
-			color: #00964B !important;
-			pointer-events: none;
-		}
+		
 
 		input[type="submit"].current:hover,
 		input[type="reset"].current:hover,
@@ -2286,6 +2282,18 @@ input, select, textarea {
 			color: #000000 !important;
 			background: #ffffff !important;
 
+		}
+		
+		.button.green {
+			background-color: #A4D0BA;
+			color: #00964B !important;
+			pointer-events: none;
+		}
+		
+		.button.green:hover {
+			background-color: #00964B;
+			color: #A4D0BA !important;
+			pointer-events: none;
 		}
 
 		input[type="submit"].large,
