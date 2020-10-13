@@ -2132,6 +2132,18 @@ input, select, textarea {
 			background-color: #1B1159;
 		}
 
+	.menu.green {
+		background: #00964B !important;
+	}
+
+		.menu.green a {
+			border: 1px solid #00964B !important;
+		}
+
+		.menu.green a:hover {
+			background-color: #A4D0BA !important;
+		}
+
 	@media screen and (max-width: 1150px) {
 		.menu { 
 			width: 100%;
